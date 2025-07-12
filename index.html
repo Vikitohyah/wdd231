@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Temple Album</title>
+    <meta name="author" content="Victoria Edorh">
+    <meta name="description" content="A list of the Temples of the Church of Jesus Christ of Latter Day Saints and their locations">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/course-small.css">
+    <link rel="stylesheet" href="styles/course-large.css">
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.webp" id="logo" alt=""><span class="name">Edorh Victoria</span>
+            <a href="#" id="menu"></a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="chamber.html">Chamber</a>
+            <a href="final.html">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+
+       <section class="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consectetur magni distinctio placeat necessitatibus? Similique provident dignissimos voluptates voluptatum ullam inventore modi, veritatis libero voluptas dolores excepturi exercitationem perspiciatis vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non quis iste voluptates, enim earum blanditiis nemo dolorem odio minima assumenda velit dignissimos iure nobis a veritatis fuga distinctio natus!</p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/vicki.webp" alt="vicki" class="stu-pic">
+        </section>
+
+        <section class="course">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button data-subject="all">All</button>
+                <button data-subject="WDD">WDD</button>
+                <button data-subject="CSE">CSE</button>
+            </div>
+            <div id="course-container"></div>
+            <div>Total Credits: <span id="credit-count">0</span></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.github.com/Vikitohyah/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="foot">
+            <p>
+                &copy;<span id="current-year"></span>
+                Edorh Victoria - Lagos Nigeria
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
