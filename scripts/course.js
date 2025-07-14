@@ -1,7 +1,7 @@
 document.getElementById('current-year').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
 
-// Responsive menu (add your own CSS toggle logic)
+
 const navigation = document.querySelector('nav');
 const hamburger = document.querySelector('#menu');
 

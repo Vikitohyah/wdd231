@@ -1,0 +1,20 @@
+{
+  "members": [
+    {
+      "name": "Sunshine Bakery",
+      "address": "123 Bread Street, Sweetville",
+      "phone": "555-1234",
+      "website": "https://sunshinebakery.com",
+      "image": "sunshine.png",
+      "level": 3
+    },
+    {
+      "name": "TechForge",
+      "address": "88 Silicon Ave, Techtown",
+      "phone": "555-4567",
+      "website": "https://techforge.com",
+      "image": "techforge.png",
+      "level": 2
+    }
+  ]
+}
