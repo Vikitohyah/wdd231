@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chamber of Commerce directory page showcasing member businesses and organizations." />
-    <meta name="author" content="Victoria Edorh" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chamber of Commerce directory page showcasing member businesses and organizations." />
+  <meta name="author" content="Victoria Edorh" />
 
-    <title>Chamber Member Directory | Victoria Edorh</title>
-    <link rel="icon" href="images/favicon.ico" />
+  <title>Chamber Member Directory | Victoria Edorh</title>
+  <link rel="icon" href="images/favicon.ico" />
 
-    <meta property="og:title" content="Chamber of Commerce Directory" />
-    <meta property="og:description" content="Discover local businesses and organizations in our chamber member directory." />
-    <meta property="og:image" content="https://example.com/images/social-preview.jpg" />
-    <meta property="og:url" content="https://yourchambersite.com/directory.html" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/directory.css">
-    <script src="scripts/directory.js" defer></script>
+  <meta property="og:title" content="Chamber of Commerce Directory" />
+  <meta property="og:description" content="Discover local businesses and organizations in our chamber member directory." />
+  <meta property="og:image" content="https://example.com/images/social-preview.jpg" />
+  <meta property="og:url" content="https://yourchambersite.com/directory.html" />
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"></noscript>
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"></noscript>
+
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+
+  <link rel="preload" href="styles/directory.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles/directory.css"></noscript>
+
+  <script src="scripts/directory.js" defer></script>
 </head>
+
 <body>
     <header>
-        <img src="images/logo.jpg" id="logo" alt="site-logo">
-        <button id="menu"></button>
+        <img src="images/logo.webp" id="logo" alt="site-logo" width="50" height="50">
+
+        <button id="menu" aria-label="Menu"></button>
         <nav>
             <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
@@ -35,55 +44,43 @@
 
     <main>
         <div class="view-toggle">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+            <button id="grid" aria-label="Grid view">
+                <i class="fa fa-th" aria-hidden="true"></i>
+            </button>
+
+            <button id="list" aria-label="List view">
+                <i class="fa-solid fa-list" aria-hidden="true"></i>
+            </button>
+
         </div>
         <section id="member-container" class="grid-view"></section>
     </main>
 
     <footer>
-        <div>
-            <table>
-                <tr>
-                    <td><strong>Lagos Chamber of Commerce</strong></td>
-                </th>
-                <tr>
-                    <td>1, idowu Taylor Street, Victoria Island</td>
-                </tr>
-                <tr>
-                    <td>Lagos, Nigeria</td>
-                </tr>
-                <tr>
-                    <td>info@lagoscc.org</td>
-                </tr>
-                <tr>
-                    <td>(223) 555-2300</td>
-                </tr>
-            </table>
+        <div class="footer-section contact-info">
+            <h4>Lagos Chamber of Commerce</h4>
+            <p>1, Idowu Taylor Street, Victoria Island</p>
+            <p>Lagos, Nigeria</p>
+            <p>info@lagoscc.org</p>
+            <p>(223) 555-2300</p>
         </div>
 
-        <div class="socials">
-            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.github.com/Vikitohyah/"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="footer-section socials">
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.x.com/" aria-label="Twitter (X)">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
         </div>
 
-        <div>
-            <table>
-                <tr>
-                    <td>WDD231 Class Project</td>
-                </tr>
-                <tr>
-                    <td>Victoria Edorh</td>
-                </tr>
-                <tr>
-                    <td>&copy;<span id="current-year"></span>Lagos Chamber of Commerce</td>
-                </tr>
-                <tr>
-                    <td id="lastModified"></td>
-                </tr>
-            </table>
+        <div class="footer-section dev-info">
+            <p>WDD231 Class Project</p>
+            <p>Victoria Edorh</p>
+            <p>&copy; <span id="current-year"></span> Lagos Chamber of Commerce</p>
+            <p id="lastModified"></p>
         </div>
-    </footer>
-</body>
-</html>
+</footer>

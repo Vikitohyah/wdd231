@@ -1,6 +1,15 @@
 document.getElementById("current-year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
+const navigation = document.querySelector('nav');
+const hamburger = document.querySelector('#menu');
+
+hamburger.addEventListener('click', () => {
+    navigation.classList.toggle('show');
+    hamburger.classList.toggle('show');
+});
+
+
 const memberContainer = document.getElementById("member-container");
 
 async function getMembers() {
@@ -16,11 +25,11 @@ function displayMembers(members) {
     card.classList.add("member-card");
 
     card.innerHTML = `
-      <h3>${member.name}</h3>
-      <p>${member.address}</p>
-      <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">${member.website}</a>
-      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
+    <img src="${member.image}" alt="${member.name} logo" loading="lazy" class="member-logo" width="100" height="100">
+    <h3>${member.name}</h3>
+    <p class="address">${member.address}</p>
+    <p class="phone">${member.phone}</p>
+    <a href="${member.website}" target="_blank" class="website">${member.website}</a>
     `;
     memberContainer.appendChild(card);
   });
@@ -30,13 +39,13 @@ const gridView = document.querySelector("#grid");
 const listView = document.querySelector("#list")
 
 gridView.addEventListener("click", () => {
-  memberContainer.classList.add("grid");
-  memberContainer.classList.remove("list");
+  memberContainer.classList.add("grid-view");
+  memberContainer.classList.remove("list-view");
 });
 
 listView.addEventListener("click", () => {
-  memberContainer.classList.add("list");
-  memberContainer.classList.remove("grid");
+  memberContainer.classList.add("list-view");
+  memberContainer.classList.remove("grid-view");
 });
 
 getMembers();

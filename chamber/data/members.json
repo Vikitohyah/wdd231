@@ -1,19 +1,75 @@
 {
   "members": [
     {
-      "name": "Sunshine Bakery",
-      "address": "123 Bread Street, Sweetville",
-      "phone": "555-1234",
-      "website": "https://sunshinebakery.com",
-      "image": "sunshine.png",
+      "name": "pwc",
+      "address": "5B Water Corporation Road Landmark Towers, Victoria Island, Lagos",
+      "phone": "+234 (1) 271 1700",
+      "website": "https://www.pwc.com/ng/en.html",
+      "image": "images/pwc-logo.webp",
       "level": 3
     },
     {
-      "name": "TechForge",
-      "address": "88 Silicon Ave, Techtown",
-      "phone": "555-4567",
-      "website": "https://techforge.com",
-      "image": "techforge.png",
+      "name": "Zenith",
+      "address": "11th floor, Plot 2, Ajose Adeogun Street, Victoria Island, Lagos",
+      "phone": "01-2782960",
+      "website": "https://www.zenithbank.com",
+      "image": "images/zenith-bank-logo.webp",
+      "level": 3
+    },
+    {
+      "name": "Unilever",
+      "address": "1 Billings Way Oregun PO Box 1063, Apapa Ikeja, Lagos 100001, Nigeria",
+      "phone": "12793000",
+      "website": "https://www.unilevernigeria.com",
+      "image": "images/unilever-logo.webp",
+      "level": 3
+    },
+    {
+      "name": "Fenchurchgroup",
+      "address": "154 Prince Ade Odedina St, Victoria Island, Lagos 106104, Lagos",
+      "phone": "16330684",
+      "website": "https://fenchurchgroupng.com/",
+      "image": "images/fenchurch-logo.webp",
+      "level": 2
+    },
+    {
+      "name": "Africa's Digital Backbone",
+      "address": "6B Idowu Olaitan St, Gbagada II, Lagos 102216, Lagos",
+      "phone": "+27 011 030 0000",
+      "website": "https://wiocc.net/africas-digital-backbone/",
+      "image": "images/digital-backbone-logo.webp",
+      "level": 3
+    },
+    {
+      "name": "Cornerstone",
+      "address": "191 Herbert Macaulay Wy, Sabo yaba, Yaba, Lagos Mainland 101001, Lagos",
+      "phone": "12806500",
+      "website": "https://cornerstone.com.ng/",
+      "image": "images/cornerstone-logo.webp",
+      "level": 3
+    },
+    {
+      "name": "AIICO Insurance",
+      "address": "AIICO Plaza, Plot PC 12, Churchgate Street, Victoria Island, Lagos 102273, Lagos",
+      "phone": "0803 714 4883",
+      "website": "https://www.aiicoplc.com/",
+      "image": "images/aiico-logo.webp",
+      "level": 2
+    },
+    {
+      "name": "Romco",
+      "address": "Elerangbe road, Lekki epe express, Kayotoro, Lagos, Nigeria",
+      "phone": "+44 (0) 20 3637 7195",
+      "website": "https://romcometals.com/",
+      "image": "images/romco-logo.webp",
+      "level": 2
+    },
+    {
+      "name": "MTN",
+      "address": "14 Idowu Martins St, Victoria Island, Lagos 106104, Lagos",
+      "phone": "+2348031000300",
+      "website": "https://www.mtn.ng/",
+      "image": "images/mtn-logo.webp",
       "level": 2
     }
   ]
