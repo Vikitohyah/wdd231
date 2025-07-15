@@ -25,6 +25,10 @@ h1, h2, h3, button {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+    color: #146b14;
+}
+
 main{
     background-color: aliceblue;
     padding: 1rem;
@@ -163,57 +167,57 @@ nav.show{
 }
 
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 1rem;
-  gap: 1rem;
-  padding: 2rem 1rem;
-  min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    min-height: 200px;
 }
 
 .footer-section {
-  flex: 1 1 250px;
-  max-width: 300px;
+    flex: 1 1 250px;
+    max-width: 300px;
 }
 
 footer h4 {
-  margin-bottom: 0.5rem;
-  color: #146b14;
-  font-size: 1.1rem;
-  text-align: left;
+    margin-bottom: 0.5rem;
+    color: #146b14;
+    font-size: 1.1rem;
+    text-align: left;
 }
 
 footer p {
-  margin: 0.3rem 0;
-  font-size: 0.9rem;
-  color: #333;
-  text-align: left;
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    color: #333;
+    text-align: left;
 }
 
 .socials {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
 }
 
 .socials i {
-  background-color: #333;
-  color: #fff;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  padding: 0.5rem;
-  width: 40px;
-  height: 40px;
-  line-height: 30px;
-  text-align: center;
-  display: inline-block;
-  transition: background-color 0.3s;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
 .socials i:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 @media screen and (min-width:600px) {
@@ -267,13 +271,13 @@ footer p {
     }
 
     footer {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-  }
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
 
-  .footer-section {
-    max-width: 100%;
-  }
+    .footer-section {
+        max-width: 100%;
+    }
     
 }
