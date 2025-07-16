@@ -26,7 +26,7 @@ function displayMembers(members) {
 
     card.innerHTML = `
     <img src="${member.image}" alt="${member.name} logo" loading="lazy" class="member-logo" width="100" height="100">
-    <h3>${member.name}</h3>
+    <h2>${member.name}</h2>
     <p class="address">${member.address}</p>
     <p class="phone">${member.phone}</p>
     <a href="${member.website}" target="_blank" class="website">${member.website}</a>
