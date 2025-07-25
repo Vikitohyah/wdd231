@@ -26,6 +26,7 @@ function displayMembers(members) {
   });
 }
 
+// Grid/List toggle
 const gridView = document.querySelector("#grid");
 const listView = document.querySelector("#list")
 

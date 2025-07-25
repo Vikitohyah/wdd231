@@ -1,6 +1,7 @@
 import { setupFooterAndHeader } from "./modules.js";
 setupFooterAndHeader();
 
+// Weather From Openweather
 const myDesc = document.querySelector('#desc');
 const myTemp = document.querySelector('#temp');
 const myHumid = document.querySelector('#humidity');
@@ -33,6 +34,7 @@ async function fetchApi() {
       myLow.textContent = `Low: ${Math.round(data.main.temp_min)}°`;
       mySunrise.textContent = `Sunrise: ${formatTime(data.sys.sunrise)}`;
       mySunset.textContent = `Sunset: ${formatTime(data.sys.sunset)}`;
+      const myIcon = document.querySelector('#icon')
       const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
       myIcon.setAttribute('SRC', iconsrc)
       myIcon.setAttribute('alt', data.weather[0].description)
@@ -56,7 +58,7 @@ function formatTime(unixTime) {
   });
 }
 
-
+// Forcast From Openweather
 const myForcastKey = "42c55903292799109fd233858129d102";
 const myForcastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myForcastKey}&units=imperial`;
 
@@ -99,7 +101,7 @@ async function fetchForcastApi() {
 
 fetchForcastApi();
 
-
+// Our Members Filtered
 async function loadSpotlights() {
   const res = await fetch("data/members.json");
   const data = await res.json();
