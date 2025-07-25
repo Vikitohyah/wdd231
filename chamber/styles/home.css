@@ -16,30 +16,52 @@ main{
     background-color: #fff;
 }
 
+.hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 400px;
+    padding: 2rem;
+}
+
 .hero img {
-  width: 100%;
-  height: 400px;
-  display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
-.hero {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.hero, .h1{
+.title {
     margin-bottom: 1rem;
 }
 
-.hero{
-    position: relative;
+.title, .cta {
+    z-index: 1;
+}
+
+.cta {
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #146b14;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta:hover{
+    background-color: #5fdd5f;
 }
 
 h4{
     font-size: 2rem;
 }
 
-.weather, .forecast{
+.hero, .weather, .forecast{
     margin-bottom: 1rem;
 }
 
@@ -62,21 +84,6 @@ h4{
 .member-spotlight{
     background-color: #f0f0f0;
     width: 100%;
-}
-
-.cta{
-    border-radius: 50px;
-    padding: 1rem;
-    color: white;
-    background-color: #146b14;
-    text-decoration: none;
-    position: absolute;
-    top: 60px;
-    left: 20px;
-}
-
-.cta:hover{
-    background-color: #5fdd5f;
 }
 
 #spotlight-container{
@@ -157,7 +164,7 @@ h4{
         gap: 10px;
     }
 
-    .hero img {
+    .hero{
         height: 500px;
     }
 
