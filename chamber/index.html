@@ -31,35 +31,82 @@
     <link rel="preload" href="styles/directory.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles/directory.css"></noscript>
 
-    <script type="module" src="scripts/directory.js"></script>
+    <link rel="preload" href="styles/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/home.css"></noscript>
+
+    <script type="module" src="scripts/home.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.webp" id="logo" alt="site-logo" width="50" height="50">
+        <img src="images/logo.webp" id="logo" alt="site-logo" width="50" height="50" loading="lazy">
 
         <button id="menu" aria-label="Menu"></button>
         <nav>
             <a href="index.html">Home</a>
-            <a href="directory.html" class="active">Directory</a>
+            <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
             <a href="discover.html">Discover</a>
         </nav>
     </header>
 
     <main>
-        <h1>Chamber of Commerce Business Directory</h1>
-        <div class="view-toggle">
-            <button id="grid" aria-label="Grid view">
-                <i class="fa fa-th" aria-hidden="true"></i>
-            </button>
+        <section class="hero">
+            <img src="images/hero-image.webp" alt="Chamber of Commerce Hero" width="1536" height="1024">
+            <a href="join.html" class="cta">Join Today</a>
+        </section>
 
-            <button id="list" aria-label="List view">
-                <i class="fa-solid fa-list" aria-hidden="true"></i>
-            </button>
+        <h1>Empowering Local Businesses</h1>
+        <div class="home">
+            <section class="events">
+                <h2>Events</h2>
+                <ul>
+                    <li><p><strong>INVEST NIGERIA 2025</strong> - August 10, 2025</p>
+                        <img src="images/event1.jpg" alt="" width="200" height="200">
+                    </li>
+                    <li><p><strong>ICTEL EXPO 2025</strong> - July30, 2025</p>
+                        <img src="images/event2.jpg" alt="" width="200" height="200">
+                    </li>
+                </ul>
+            </section>
 
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <div>
+                        <img id="icon" src="" alt="weather-icon">
+                    </div>
+                    <div class="weather-details">
+                        <p id="temp"></p>
+                        <p id="desc"></p>
+                        <p id="high"></p>
+                        <p id="low"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast" class="forecast-container"></div>
+            </section>
+            <section class="member-spotlight">
+                <h2>Our Members</h2>
+                <div id="spotlight-container">
+                    <div class="gold-spotlights">
+                        <h3>Our Gold Sponsors</h2>
+                        <div class="gold-cards"></div> <!-- Cards will go here -->
+                    </div>
+                    <div class="silver-spotlights">
+                        <h3>Our Silver Sponsors</h2>
+                        <div class="silver-cards"></div> <!-- Cards will go here -->
+                    </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <section id="member-container" class="grid-view"></section>
     </main>
 
     <footer>

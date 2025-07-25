@@ -1,14 +1,5 @@
-document.getElementById("current-year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
-
-const navigation = document.querySelector('nav');
-const hamburger = document.querySelector('#menu');
-
-hamburger.addEventListener('click', () => {
-    navigation.classList.toggle('show');
-    hamburger.classList.toggle('show');
-});
-
+import { setupFooterAndHeader } from "./modules.js";
+setupFooterAndHeader();
 
 const memberContainer = document.getElementById("member-container");
 

@@ -6,6 +6,7 @@
       "phone": "+234 (1) 271 1700",
       "website": "https://www.pwc.com/ng/en.html",
       "image": "images/pwc-logo.webp",
+      "email": "infopwc@gmail.com",
       "level": 3
     },
     {
@@ -14,6 +15,7 @@
       "phone": "01-2782960",
       "website": "https://www.zenithbank.com",
       "image": "images/zenith-bank-logo.webp",
+      "email": "infozenith@gmail.com",
       "level": 3
     },
     {
@@ -22,7 +24,8 @@
       "phone": "12793000",
       "website": "https://www.unilevernigeria.com",
       "image": "images/unilever-logo.webp",
-      "level": 3
+      "email": "infounilever@gmail.com",
+      "level": 2
     },
     {
       "name": "Fenchurchgroup",
@@ -30,6 +33,7 @@
       "phone": "16330684",
       "website": "https://fenchurchgroupng.com/",
       "image": "images/fenchurch-logo.webp",
+      "email": "infofcg@gmail.com",
       "level": 2
     },
     {
@@ -38,7 +42,8 @@
       "phone": "+27 011 030 0000",
       "website": "https://wiocc.net/africas-digital-backbone/",
       "image": "images/digital-backbone-logo.webp",
-      "level": 3
+      "email": "infoadb@gmail.com",
+      "level": 2
     },
     {
       "name": "Cornerstone",
@@ -46,7 +51,8 @@
       "phone": "12806500",
       "website": "https://cornerstone.com.ng/",
       "image": "images/cornerstone-logo.webp",
-      "level": 3
+      "email": "infocornerstone@gmail.com",
+      "level": 1
     },
     {
       "name": "AIICO Insurance",
@@ -54,6 +60,7 @@
       "phone": "0803 714 4883",
       "website": "https://www.aiicoplc.com/",
       "image": "images/aiico-logo.webp",
+      "email": "infoaiico@gmail.com",
       "level": 2
     },
     {
@@ -62,7 +69,8 @@
       "phone": "+44 (0) 20 3637 7195",
       "website": "https://romcometals.com/",
       "image": "images/romco-logo.webp",
-      "level": 2
+      "email": "inforomco@gmail.com",
+      "level": 3
     },
     {
       "name": "MTN",
@@ -70,7 +78,8 @@
       "phone": "+2348031000300",
       "website": "https://www.mtn.ng/",
       "image": "images/mtn-logo.webp",
-      "level": 2
+      "email": "infomtn@gmail.com",
+      "level": 3
     }
   ]
 }
