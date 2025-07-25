@@ -60,6 +60,12 @@ nav a:hover{
     background-color: rgb(142, 230, 142);
 }
 
+nav a.active {
+  font-weight: bold;
+  color: #146b14;
+  border-bottom: 2px solid #146b14;
+}
+
 nav a:active{
     text-decoration: underline;
 }
