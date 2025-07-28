@@ -94,12 +94,25 @@ const courses = [
 const courseContainer = document.getElementById("course-container");
 const creditCount = document.getElementById("credit-count");
 const buttons = document.querySelectorAll(".course-buttons button");
+const courseDetails = document.querySelector('#course-details');
 
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        renderCourses(button.dataset.subject);
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = courseDetails.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
     });
-});
+}
 
 function renderCourses(subject = "all") {
     courseContainer.innerHTML = "";
@@ -119,29 +132,20 @@ function renderCourses(subject = "all") {
             smallButton.classList.add("completed");
         }
 
-
-        const detailsDiv = document.createElement("div");
-        detailsDiv.classList.add("course-card", "collapsed");
-        if (course.completed) {
-            detailsDiv.classList.add("completed");
-        }
-
-        detailsDiv.innerHTML = `
-            <p><strong>Credits:</strong> ${course.credits}</p>
-            <p><strong>Description:</strong> ${course.description}</p>
-            <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
-            <p class="status">${course.completed ? "Completed" : "Incomplete"}</p>
-        `;
-
         smallButton.addEventListener("click", () => {
-            detailsDiv.classList.toggle("collapsed");
+            displayCourseDetails(course);
         });
 
         wrapper.appendChild(smallButton);
-        wrapper.appendChild(detailsDiv);
         courseContainer.appendChild(wrapper);
     });
 }
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        renderCourses(button.dataset.subject);
+    });
+});
 
 // Render all courses on load
 renderCourses();
