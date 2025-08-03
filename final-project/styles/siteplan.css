@@ -1,0 +1,94 @@
+
+:root{
+    --color-primary: #E50914; /* Primary (Brand/Headings/Buttons) */
+    --color-bg:      #0F0F0F; /* Page background */
+    --color-panel:   #1A1A1A; /* Card/panel background */
+    --color-text:    #F5F5F5; /* Primary text */
+    --color-muted:   #C8C8C8; /* Secondary text/borders */
+}
+
+:root{
+    --font-headings: "Segoe UI", Roboto, Arial, sans-serif;
+    --font-body: Georgia, "Times New Roman", serif;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+    body{
+    margin: 0;
+    background: #151515;
+    color: #333;
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+h1, h2, h3{
+    font-family: var(--font-headings);
+    line-height: 1.25;
+    margin: 0 0 .5rem 0;
+}
+
+h1{
+    color: #fb3741;
+}
+    
+.color-box1, .color-box2, .color-box3, .color-box4, .color-box5 {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    border: 1px solid #aaa;
+}
+
+.color-box1{
+    background-color: #e50914;
+}
+
+.color-box2{
+    background-color: #151515;
+}
+
+.color-box3{
+    background-color: #ccc;
+}
+.color-box4{
+    background-color: #fff;
+}
+
+.color-box5{
+    background-color: #333;
+}
+
+section{
+    background-color: #fff;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0 1.25rem;
+}
+section h2{
+    margin-top: 0;
+    color: #e50914;
+}
+
+.wireframes{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+img .wireframe {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
