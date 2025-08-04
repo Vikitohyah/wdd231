@@ -1,14 +1,5 @@
-
 :root{
-    --color-primary: #E50914; /* Primary (Brand/Headings/Buttons) */
-    --color-bg:      #0F0F0F; /* Page background */
-    --color-panel:   #1A1A1A; /* Card/panel background */
-    --color-text:    #F5F5F5; /* Primary text */
-    --color-muted:   #C8C8C8; /* Secondary text/borders */
-}
-
-:root{
-    --font-headings: "Segoe UI", Roboto, Arial, sans-serif;
+    --font-headings: "Poppins", Arial, sans-serif;
     --font-body: Georgia, "Times New Roman", serif;
 }
 
