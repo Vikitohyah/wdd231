@@ -1,0 +1,54 @@
+{
+    "interests": [
+        {
+            "name": "Lekki Conservation Centre",
+            "image": "images/city-museum.webp",
+            "address":"KM 19, Lekki-Epe Expressway, Lagos 106104 Nigeria",
+            "description": "Located in the middle of Lagos, this conservation center is home to abundant plants and wildlife and plays a vital role in preserving the region’s ecosystem. The park is also home to the longest canopy walkway in Africa, offering 360-degree views from above the treetops. If you’re afraid of heights, fret not—crossing this suspended walkway is optional.",
+            "card":"card1"
+        },
+        {
+            "name": "Terra Kulture",
+            "image": "images/city-museum.webp",
+            "address": "Plot 1376, Tiamiyu Savage, Off Ahmadu Bello Way, Victoria Island, Lagos.",
+            "description": "Terra Kulture Arts and Studios is an educational and recreational organization set up in 2003 to promote the richness and diversity of Nigerian languages, arts and culture. Terra Kulture has organized over 200 art exhibitions, 135 plays, 65 book readings.",
+            "card": "card2"
+        },
+        {
+            "name": "Nike Art Gallery",
+            "address": "No. 2, Elegushi Road 3rd Roundabout, Epe Expressway, Lagos 106104 Nigeria",
+            "description": "Nike Art Centre, Lagos, is one of Nigeria's hidden treasures. Located in Lekki, Lagos, the four-story building compromises of an art gallery and textile museum featuring over 7,000 pieces. The Centre has a diverse collection of art by a multitude of artists, celebrating Nigeria's talent, offering visitors an insight into all cultures of Nigeria through the medium of art. It can take up to a full day to discover all the Nike Art Centre has to offer. ",
+            "card": "card3"
+        },
+        {
+            "name": "Landmark Leisure Beach",
+            "address": "Plot 3 & 4 Water Corporation Road, Lagos 100500 Nigeria",
+            "description": "Landmark Beach is an enchanting coastal paradise situated on Victoria Island, Lagos, where the synergy of nature and leisure creates an unparalleled experience for tourists. This expansive stretch of golden sand is framed by the beautiful Atlantic Ocean, inviting visitors to unwind in a serene environment. The beach is renowned for its cleanliness and safety, making it a family-friendly destination that caters to all ages.",
+            "card":"card4"
+        },
+        {
+            "name": "Giwa Gardens",
+            "address": "FJ5H+M2X Ejike Street, Native Villa Off Ablag Road, Monastery Way Sangotedo, Lekki, Lagos",
+            "description": "Giwa Gardens is West Africa's largest and most technologically advanced water park, offering various rides like a wave pool and extreme river, along with dining and relaxation options.",
+            "card":"card5"
+        },
+        {
+            "name": "Makoko Floating Community",
+            "address":"F9WV+C5V, Ibrahim Babangida Bridge, Lagos Mainland, Lagos",
+            "description": "a vibrant but impoverished floating slum in Lagos, Nigeria, characterized by wooden homes built on stilts over the lagoon, with canoes as the primary mode of transportation. The community demonstrates unique human adaptation to their water-based environment, serving as a living example of a water city within a major metropolis.",
+            "card":"card6"
+        },
+        {
+            "name": "Rufus & Bee",
+            "address":"Okunde Bluewaters scheme Twinwaters Lagos, off Remi Olowude St, Eti-Osa, Lekki",
+            "description": "A Recreational Facility Known To Be The Largest Game Arcade In Nigeria With Over 100 Games for Children and adults, Bowling Alley, Classic Snooker, Sports Bar And An American Tex-mex Restaurant",
+            "card":"card7"
+        },
+        {
+            "name": "John Randle Centre for Yorùbá Culture & History",
+            "address":"Onikan Round About, Lagos Island, Lagos 102273, Lagos",
+            "description": "A cultural hub in Lagos, that celebrates and preserves Yoruba heritage through exhibitions, a library, and cultural performances. Housed in a historic, renovated site that once included the Dr. John Randle swimming pool, the center features a modern, fractal-shaped building and offers immersive experiences into Yoruba history, art, fashion, and language",
+            "card":"card8"
+        }
+    ]
+}

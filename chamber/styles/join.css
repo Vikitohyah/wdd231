@@ -86,9 +86,9 @@ input[type="submit"]:hover {
 }
 
 .membership-card button {
-    border: 2px solid #146b14;
-    padding: 10px 10px;
-    background-color: #fff;
+  border: 2px solid #146b14;
+  padding: 10px 10px;
+  background-color: #fff;
 }
 
 .membership-card:nth-child(1) {
