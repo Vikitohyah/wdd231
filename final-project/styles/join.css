@@ -1,0 +1,120 @@
+.join-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  margin: 0 5px;
+  align-items: center;
+  border-bottom: 3px solid #ff0000;
+}
+
+.join-header h1{
+  padding: 10px;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.watchlist-header p{
+  color: #fff;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.light-mode .join-header {
+  background-color: white;
+}
+
+.light-mode .join-header h1{
+  color: #ff0000;
+}
+
+.join-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+.join-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.join-container label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.join-container input, .join-container select {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.4rem;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background: #2a2a2a;
+    color: #fff;
+}
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.85rem;
+    display: none;
+}
+.join-container #join {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1.5rem;
+    background: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.join-container #join:hover {
+    background: #b70000;
+}
+.switch-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+.switch-link a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+/* === Animation === */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Thank You Page Styling === */
+.thankyou-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.thankyou-container h1 {
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.confirmation {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.confirmation span {
+  font-weight: bold;
+  color: #333;
+}
