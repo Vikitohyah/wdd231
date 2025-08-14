@@ -35,6 +35,9 @@
     <link rel="preload" href="styles/join.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles/join.css"></noscript>
 
+    <link rel="preload" href="styles/watchlist.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/watchlist.css"></noscript>
+
     <script type="module" src="scripts/join.js"></script>
 </head>
 
@@ -57,11 +60,11 @@
     </header>
 
     <main>
-        <div class="join-header">
+        <div class="page-header">
             <h1>Create Account</h1>
         </div>
-        <div class="join-container">
-            <form action="thankyou,html" method="get" id="joinForm" novalidate >
+        <div class="form-container">
+            <form action="thankyou,html" method="get" id="joinForm" >
                
                 <label for="name">
                     Full Name
@@ -100,7 +103,7 @@
 
                 <input type="hidden" name="timestamp" id="timestamp">
 
-                <input type="submit" value="Join Now" id="join">
+                <input type="submit" value="Sign Up" id="join">
             </form>
             <div class="switch-link">
                 <p>Already have an account? <a href="login.html">Log in instead</a></p>

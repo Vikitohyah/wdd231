@@ -32,8 +32,8 @@
     <link rel="preload" href="styles/movie.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles/movie.css"></noscript>
 
-    <link rel="preload" href="styles/login.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/login.css"></noscript>
+    <link rel="preload" href="styles/join.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/join.css"></noscript>
 
     <script type="module" src="scripts/login.js"></script>
 </head>
@@ -58,7 +58,7 @@
 
     <main>
         <div class="container">
-            <div class="login-container">
+            <div class="form-container">
                 <h1>Log In</h1>
                 <form id="login-form" novalidate>
                     
@@ -75,9 +75,9 @@
                         <p class="error-message" id="password-error">Password must be at least 6 characters.</p>
                     </label>
                     
-                    <input type="submit" value="Log In">
+                    <input type="submit" value="Log In" id="log-in">
                 </form>
-                <div class="alt-option">
+                <div class="switch-link">
                     <p>Don't have an account? <a href="join.html">Create one</a></p>
                 </div>
             </div>

@@ -108,7 +108,7 @@ async function showMovieDetails(movieId) {
                     <button id="closePopup">X</button>
                 </div>
                 <div class="popup-body">
-                    <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title} Poster" class="movie-poster">
+                    <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title} Poster" class="movie-poster" loading="lazy">
                     <div class="movie-info">
                         <p><strong>Rating:</strong> ${movie.vote_average} / 10</p>
                         <p><strong>Release Date:</strong> ${movie.release_date}</p>

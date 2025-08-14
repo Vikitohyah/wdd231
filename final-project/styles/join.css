@@ -8,38 +8,25 @@
   --color-overlay: rgba(0, 0, 0, 0.55);
 }
 
-.join-header {
-  background-color: var(--color-dark-bg);
-  align-items: center;
-  border-bottom: 3px solid var(--color-brand);
-}
-
-.join-header h1{
-  padding: 10px;
-  color: var(--color-dark-text);
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.light-mode .join-header {
-  background-color: var(--color-light-bg);
-}
-
-.light-mode .join-header h1{
-  color: var(--color-brand);
-}
-
-.light-mode .join-container{
+.light-mode .form-container{
     background-color: rgba(20, 20, 20, 0.9);
     color: var(--color-dark-text);
 }
 
-.light-mode .join-container input,
-.light-mode .join-container select{
+.light-mode .form-container input,
+.light-mode .form-container select{
     background-color: var(--color-light-bg);
 }
 
-.join-container {
+.container {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-container {
     max-width: 500px;
     margin: 2rem auto;
     padding: 2rem;
@@ -48,47 +35,59 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
-.join-container h1 {
+
+.form-container h1{
     text-align: center;
     margin-bottom: 1rem;
+    color: var(--color-brand);
 }
-.join-container label {
+.form-container label {
     display: block;
     margin-top: 1rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 
-.join-container select{
-    color: var(--color-light-bg);
+.form-container select{
+    color: var(--color-dark-text);
 }
 
-.join-container input, .join-container select {
+.light-mode .form-container select{
+    color: var(--color-light-text);
+}
+
+.form-container input, .form-container select {
     width: 100%;
     padding: 0.7rem;
-    margin-top: 0.4rem;
-    border: 1px solid #555;
+    margin-bottom: 0.4rem;
+    border: none;
     border-radius: 5px;
     background: #2a2a2a;
+    font-size: 1rem;
 }
+
+#log-in, #join {
+    background: #ff2e63;
+    color: var(--color-dark-text);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#log-in:hover, #join:hover {
+    background: #ff4f7c;
+}
+
+#join {
+    margin-top: 1rem;
+}
+
 .error-message {
     color: #ff4f4f;
     font-size: 0.9rem;
     display: none;
+    margin-bottom: 0.5rem;
 }
-.join-container #join {
-    width: 100%;
-    padding: 0.9rem;
-    margin-top: 1.5rem;
-    background: #ff2e63;
-    color: var(--color-dark-text);
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.join-container #join:hover {
-    background: #ff4f7c;
-}
+
 .switch-link {
     text-align: center;
     margin-top: 1rem;

@@ -46,6 +46,18 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Sections with Common rules */
+.hero-overlay, .movies-grid, dialog, .search, .socials{
+    display: flex;
+    justify-content: center;
+}
+
+.popup-header, .single-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Headers & Navigation */
 header {
   display: flex;
@@ -117,8 +129,7 @@ body, header, .card, .category-button {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
+    background: center/cover;
 }
 
 /* Dark overlay */
@@ -126,12 +137,10 @@ body, header, .card, .category-button {
     position: absolute;
     inset: 0;
     background: var(--color-overlay);
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     padding: 2rem;
-    color: white;
+    color: var(--color-dark-text);
     max-width: 700px;
 }
 
@@ -144,6 +153,8 @@ body, header, .card, .category-button {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Movie Info For Pop-up */
@@ -164,16 +175,11 @@ body, header, .card, .category-button {
 dialog {
     position: fixed;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
+    background: center/cover;
     align-items: center;
-    justify-content: center;
-    color: #fff;
+    color: var(--color-dark-text);
     padding: 3rem;
     overflow: scroll;
-    transform: scale(0);
-    transition: 200ms ease-in-out transform;
 }
 
 dialog::backdrop {
@@ -184,9 +190,11 @@ dialog::backdrop {
 .switch-wrapper {
   position: relative;
 }
+
 #theme-toggle {
   display: none;
 }
+
 .switch-label {
   display: inline-block;
   width: 50px;
@@ -197,21 +205,24 @@ dialog::backdrop {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 .switch-button {
     content: "";
     width: 20px;
     height: 20px;
-    background-color: #fff;
+    background-color: var(--color-light-bg);
     border-radius: 50%;
     position: absolute;
     top: 2px;
     left: 3px;
     transition: transform 0.3s;
 }
+
 /* Style switch for dark mode */
 body:not(.light-mode) .switch-label {
-  background-color: #333;
+  background-color: var(--color-light-text);
 }
+
 /* Move switch button to the right when in light mode */
 #theme-toggle:checked + .switch-label .switch-button {
   transform: translateX(24px);
@@ -219,9 +230,7 @@ body:not(.light-mode) .switch-label {
 
 /* Movie */
 .movies-grid {
-    display: flex;
     align-items: flex-start;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 1rem;
@@ -242,9 +251,9 @@ body:not(.light-mode) .switch-label {
   color: var(--color-dark-text);
   cursor: pointer;
   border-radius: .5rem;
-  transition: transform 0.2s ease-in-out;
 }
-.card:hover .movie-img, .heart-icon:hover {
+
+.card:hover .poster-img:hover, .heart-icon:hover {
   transform: scale(1.1);
 }
 
@@ -255,11 +264,13 @@ body:not(.light-mode) .switch-label {
   position: relative;
   transition: 200ms ease-in-out transform;
 }
+
 .poster-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .poster-img::before {
   content: '';
   position: absolute;
@@ -270,9 +281,6 @@ body:not(.light-mode) .switch-label {
 }
 
 .single-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     font-size: .8rem;
     margin: .2rem 0;
 }
@@ -289,7 +297,6 @@ body:not(.light-mode) .switch-label {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
 }
-
 
 /* Buttons */
 .category-button,
@@ -311,8 +318,6 @@ body:not(.light-mode) .switch-label {
 }
 
 .search {
-    display: flex;
-    justify-content: center;
     margin-top: 20px;
 }
 
@@ -324,6 +329,7 @@ body:not(.light-mode) .switch-label {
     color: white;
     outline: none;
 }
+
 .search button {
     border-radius: 0%;
 }
@@ -352,7 +358,7 @@ body:not(.light-mode) .switch-label {
   
   /* Popup Content Box */
 .popup-content {
-    background-color: #333;
+    background-color: var(--color-light-text);
     color: #f5f5f5;
     width: 80%;
     max-width: 600px;
@@ -363,17 +369,15 @@ body:not(.light-mode) .switch-label {
 }
   
 .popup-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid #444;
     padding-bottom: 10px;
 }
   
 .popup-body {
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px;
+    flex-direction: column;
 }
 
 /* Close Button */
@@ -406,7 +410,7 @@ body:not(.light-mode) .switch-label {
     display: none;
     color: red;
     text-align: center;
-    margin: 10px 0;
+    margin-bottom: 0.5rem;
 }
 
 footer {
@@ -435,19 +439,17 @@ footer h3 {
 footer p {
     margin: 0.3rem 0;
     font-size: 0.9rem;
-    color: #333;
+    color: var(--color-light-text);
     text-align: left;
 }
 
 .socials {
-    display: flex;
-    justify-content: center;
     gap: 1rem;
     font-size: 2rem;
 }
 
 .socials i {
-    background-color: #333;
+    background-color: var(--color-light-text);
     color: var(--color-dark-text);
     font-size: 1.2rem;
     border-radius: 50%;
@@ -464,16 +466,7 @@ footer p {
     background-color: #555;
 }
 
-.popup-body {
-    flex-direction: column;
-}
-
-
 @media screen and (min-width: 600px) {
-    dialog * {
-        padding: 0;
-    }
-
     dialog {
         padding: 2rem;
     }
@@ -493,14 +486,10 @@ footer p {
         display: flex !important;
         flex-direction: row;
         gap: 1rem;
-        justify-content: flex-end;
-        align-items: center;
     }
 
     nav a {
         border-top: none;
-        padding: 0.5rem;
-        margin-left: 1rem;
     }
 
     #menu {
