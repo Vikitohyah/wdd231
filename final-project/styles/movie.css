@@ -7,6 +7,8 @@
   --color-light-bg: #ffffff;
   --color-light-text: #222222;
   --color-overlay: rgba(0, 0, 0, 0.55);
+  --font-headings: "Poppins", Arial, sans-serif;
+  --font-body: "Montserrat", "Times New Roman", serif;
 }
 
 /* Light mode overrides */
@@ -37,7 +39,7 @@ body.light-mode h2 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-body)
 }
 
 body {
@@ -47,6 +49,10 @@ body {
 }
 
 /* Sections with Common rules */
+h1, h2{
+    font-family: var(--font-headings)
+}
+
 .hero-overlay, .movies-grid, dialog, .search, .socials{
     display: flex;
     justify-content: center;

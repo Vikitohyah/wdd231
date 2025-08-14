@@ -1,13 +1,3 @@
-:root {
-  --color-brand: #d90000; /* Slightly deeper red for AAA contrast */
-  --color-brand-hover: #b80000;
-  --color-dark-bg: #151515;
-  --color-dark-text: #ffffff;
-  --color-light-bg: #ffffff;
-  --color-light-text: #222222;
-  --color-overlay: rgba(0, 0, 0, 0.55);
-}
-
 .page-header {
   display: flex;
   justify-content: space-between;
