@@ -1,7 +1,17 @@
+:root {
+  --color-brand: #d90000; /* Slightly deeper red for AAA contrast */
+  --color-brand-hover: #b80000;
+  --color-dark-bg: #151515;
+  --color-dark-text: #ffffff;
+  --color-light-bg: #ffffff;
+  --color-light-text: #222222;
+  --color-overlay: rgba(0, 0, 0, 0.55);
+}
+
 .container {
     font-family: Arial, sans-serif;
     margin: 0;
-    color: #333;
+    color: var(--color-light-text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +19,7 @@
 }
 
 .login-container {
-    background-color: #fff;
+    background-color: var(--color-light-bg);
     padding: 2rem;
     border-radius: 10px;
     width: 100%;
@@ -18,7 +28,7 @@
 }
 
 .light-mode .container{
-    color: #fff;
+    color: var(--color-dark-text);
 }
 
 .light-mode .login-container{
@@ -26,7 +36,7 @@
 }
 
 .light-mode input{
-    background-color: #fff;
+    background-color: var(--color-light-bg);
 }
 
 h1 {
@@ -52,7 +62,7 @@ input {
 
 input[type="submit"] {
     background: #ff2e63;
-    color: white;
+    color: var(--color-dark-text);
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s;

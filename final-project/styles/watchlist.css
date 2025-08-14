@@ -1,32 +1,42 @@
+:root {
+  --color-brand: #d90000; /* Slightly deeper red for AAA contrast */
+  --color-brand-hover: #b80000;
+  --color-dark-bg: #151515;
+  --color-dark-text: #ffffff;
+  --color-light-bg: #ffffff;
+  --color-light-text: #222222;
+  --color-overlay: rgba(0, 0, 0, 0.55);
+}
+
 .watchlist-header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: var(--color-dark-bg);
   margin: 0 5px;
   align-items: center;
-  border-bottom: 3px solid #ff0000;
+  border-bottom: 3px solid var(--color-brand);
   text-align: center;
   
 }
 .watchlist-header h1{
   padding: 10px;
-  color: #fff;
+  color: var(--color-dark-text);
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
 .watchlist-header p{
-  color: #fff;
+  color: var(--color-dark-text);
   text-align: center;
   margin-right: 8px;
 }
 
 .light-mode .watchlist-header {
-  background-color: white;
+  background-color: var(--color-dark-text);
 }
 
 .light-mode .watchlist-header h1{
-  color: #ff0000;
+  color: var(--color-brand);
 }
 
 .light-mode .watchlist-header p{
@@ -38,7 +48,7 @@
 }
 
 .movie-card .remove-btn {
-  background: crimson;
+  background: var(--color-brand);
   color: #fff;
   border: none;
   padding: 0.5rem;
@@ -49,12 +59,12 @@
 }
 
 .movie-card .remove-btn:hover {
-  background: darkred;
+  background: var(--color-brand-hover);
 }
 
 .btn{
   padding: 0.5rem 1rem;
-  background-color:rgba(255, 0, 0, 0.7);
+  background-color:var(--color-brand);
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -62,18 +72,18 @@
 }
 
 .btn:hover{
-  background-color: rgba(255, 0, 0, 1);
+  background-color: var(--color-brand-hover);
 }
 
 .light-mode .btn{
-  background-color: #ff0000;
+  background-color: var(--color-brand);
 }
 
 .light-mode .btn:hover{
-  background-color: rgb(201, 14, 14);
+  background-color: var(--color-brand);
 }
 
 .btn a, .light-mode .btn a{
-  color: #fff;
+  color: var(--color-dark-text);
   text-decoration: none;
 }

@@ -149,7 +149,7 @@ function renderMovies(movies, container) {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-            <div class="img"><img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" loading="lazy"></div>
+            <div class="poster-img"><img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" loading="lazy"></div>
             <div class="info">
                 <h2>${movie.title}</h2>
                 <div class="single-info">
@@ -173,8 +173,12 @@ function addToWatchlist(movie) {
     if (!watchlist.some(m => m.id === movie.id)) {
         watchlist.push(movie);
         localStorage.setItem('watchlist', JSON.stringify(watchlist));
+        alert(`${movie.title} added to watchlist!`);
+      } else {
+        alert("Already in watchlist.");
     }
 }
+
 
 // ---------------- Event Listeners ----------------
 document.querySelectorAll('.category-button').forEach(button => {

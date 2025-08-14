@@ -1,38 +1,50 @@
+:root {
+  --color-brand: #d90000; /* Slightly deeper red for AAA contrast */
+  --color-brand-hover: #b80000;
+  --color-dark-bg: #151515;
+  --color-dark-text: #ffffff;
+  --color-light-bg: #ffffff;
+  --color-light-text: #222222;
+  --color-overlay: rgba(0, 0, 0, 0.55);
+}
+
 .join-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
-  margin: 0 5px;
+  background-color: var(--color-dark-bg);
   align-items: center;
-  border-bottom: 3px solid #ff0000;
+  border-bottom: 3px solid var(--color-brand);
 }
 
 .join-header h1{
   padding: 10px;
-  color: #fff;
+  color: var(--color-dark-text);
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-.watchlist-header p{
-  color: #fff;
-  text-align: center;
-  margin-right: 8px;
-}
-
 .light-mode .join-header {
-  background-color: white;
+  background-color: var(--color-light-bg);
 }
 
 .light-mode .join-header h1{
-  color: #ff0000;
+  color: var(--color-brand);
+}
+
+.light-mode .join-container{
+    background-color: rgba(20, 20, 20, 0.9);
+    color: var(--color-dark-text);
+}
+
+.light-mode .join-container input,
+.light-mode .join-container select{
+    background-color: var(--color-light-bg);
 }
 
 .join-container {
     max-width: 500px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #fff;
+    background-color: var(--color-light-bg);
+    color: var(--color-light-text);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
@@ -45,52 +57,48 @@
     margin-top: 1rem;
     font-weight: 500;
 }
+
+.join-container select{
+    color: var(--color-light-bg);
+}
+
 .join-container input, .join-container select {
     width: 100%;
     padding: 0.7rem;
     margin-top: 0.4rem;
     border: 1px solid #555;
-    border-radius: 6px;
+    border-radius: 5px;
     background: #2a2a2a;
-    color: #fff;
 }
 .error-message {
-    color: #ff6b6b;
-    font-size: 0.85rem;
+    color: #ff4f4f;
+    font-size: 0.9rem;
     display: none;
 }
 .join-container #join {
     width: 100%;
     padding: 0.9rem;
     margin-top: 1.5rem;
-    background: crimson;
-    color: #fff;
+    background: #ff2e63;
+    color: var(--color-dark-text);
     border: none;
     border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
 }
 .join-container #join:hover {
-    background: #b70000;
+    background: #ff4f7c;
 }
 .switch-link {
     text-align: center;
     margin-top: 1rem;
 }
 .switch-link a {
-    color: #ff4d4d;
+    color: #ff2e63;
     text-decoration: none;
 }
 .switch-link a:hover {
     text-decoration: underline;
-}
-
-/* === Animation === */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* === Thank You Page Styling === */

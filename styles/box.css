@@ -17,14 +17,15 @@
 }
 
 .box{
-    animation: fadeIn 2s ease-in-out infinite alternate;
-    width: 150px;
-    height: 150px;
-    background-color: red;
-    transform: rotate(15deg) translate(20px) scale(1.2);
+    background-color: aqua;
+    display: flex;
 }
 
 .box:hover{
     width: 200px;
     height: 200px;
+}
+
+.flex-item:nth-child(2) {
+  order: -1; /* Place this item first visually */
 }
