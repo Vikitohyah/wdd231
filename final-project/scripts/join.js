@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const joinForm = document.getElementById('joinForm');
 
-joinForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+joinForm.addEventListener('submit', () => {
     let valid = true;
 
     // Name

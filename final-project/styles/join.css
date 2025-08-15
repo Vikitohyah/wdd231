@@ -37,11 +37,11 @@
     font-weight: bold;
 }
 
-.form-container select{
+.form-container select, #password, #confirmPassword{
     color: var(--color-dark-text);
 }
 
-.light-mode .form-container select{
+.light-mode .form-container select, #password, #confirmPassword{
     color: var(--color-light-text);
 }
 
@@ -55,7 +55,7 @@
     font-size: 1rem;
 }
 
-#log-in, #join {
+#log-in, #submit {
     background: #ff2e63;
     color: var(--color-dark-text);
     font-weight: bold;
@@ -63,11 +63,11 @@
     transition: background 0.3s;
 }
 
-#log-in:hover, #join:hover {
+#log-in:hover, #submit:hover {
     background: #ff4f7c;
 }
 
-#join {
+#submit {
     margin-top: 1rem;
 }
 
