@@ -1,5 +1,4 @@
 export function setupFooterAndHeader() {
-    // Dynamic year and last modified date
   const year = document.getElementById("current-year");
   if (year) year.textContent = new Date().getFullYear();
 
@@ -24,7 +23,7 @@ export function setupFooterAndHeader() {
     const savedTheme = localStorage.getItem('theme');
     const isLightMode = savedTheme === 'light';
     document.body.classList.toggle('light-mode', isLightMode);
-    themeToggle.checked = isLightMode; // Set the switch position based on saved theme
+    themeToggle.checked = isLightMode;
     
     themeToggle.addEventListener('change', () => {
       document.body.classList.toggle('light-mode', themeToggle.checked);
