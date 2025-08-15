@@ -472,6 +472,10 @@ footer p {
     background-color: #555;
 }
 
+.demo:hover{
+  background-color: rgb(107, 107, 241);
+}
+
 @media screen and (min-width: 600px) {
     dialog {
         padding: 2rem;
