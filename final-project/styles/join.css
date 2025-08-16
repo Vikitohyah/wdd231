@@ -6,6 +6,7 @@
 .light-mode .form-container input,
 .light-mode .form-container select{
     background-color: var(--color-light-bg);
+    color: var(--color-light-text);
 }
 
 .container {
@@ -37,14 +38,6 @@
     font-weight: bold;
 }
 
-.form-container select, #password, #confirmPassword{
-    color: var(--color-dark-text);
-}
-
-.light-mode .form-container select, #password, #confirmPassword{
-    color: var(--color-light-text);
-}
-
 .form-container input, .form-container select {
     width: 100%;
     padding: 0.7rem;
@@ -53,6 +46,7 @@
     border-radius: 5px;
     background: #2a2a2a;
     font-size: 1rem;
+    color: var(--color-dark-text);
 }
 
 #log-in, #submit {
